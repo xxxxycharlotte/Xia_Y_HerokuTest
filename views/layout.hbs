@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="/stylesheets/master.css">
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <h1>Anything under me is being rendered dynamically from the route</h1>
+
+    <!-- triple handlebars is a shorthand for a router-view -->
+    {{{body}}}
+
+    <h3>I  live under the router view</h3>
+    <a href="/user1">User 1</a>
+    <a href="/user2">User 2</a>
+  </body>
+</html>
