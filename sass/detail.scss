@@ -1,0 +1,124 @@
+@import '_vars';
+
+main {
+
+    .col-left,
+    .col-right {
+        padding: 3em 2em;
+    }
+
+    .col-left {
+        background-color: $footer-bg-color;
+
+        h2 {
+            font-size: 2em;
+            font-weight: 800;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        p {
+            font-size: 1.2em;
+            padding: .5em 0;
+
+            a {
+                padding: .1em .5em;
+                text-decoration: underline;
+                transition: background-color .5s, color .5s;
+
+                &:hover {
+                    background-color: #000;
+                    color: #FFF;
+                    transition: background-color .5s, color .5s;
+                }
+            }
+        }
+
+        .inputs {
+            margin-top: 2em;
+
+            select {
+                font-size: 1.2em;
+                width: 100%;
+                height: 2em;
+                line-height: 2em;
+                padding: 0 .5em;
+            }
+
+            input[type="submit"] {
+                color: #FFF;
+                background-color: #FF0000;
+                font-size: 1.2em;
+                font-weight: bold;
+                padding: .75em 1em;
+                width: 100%;
+                margin-top: 2em;
+                transition: box-shadow .5s;
+
+                &:hover {
+                    box-shadow: 0 0 .5em #FF0000;
+                    transition: box-shadow .5s;
+                }
+            }
+        }
+    }
+
+    .col-right {
+        .product-image {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .notes {
+            font-weight: bold;
+            margin-top: 1em;
+        }
+    }
+
+    .paragraph {
+        padding: 1.5em;
+
+        h2 {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+
+        p,
+        ul {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        ul {
+            padding: 0em;
+            list-style-position: inside;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .paragraph {
+            padding: 3em 6em;
+            p,
+            ul {
+                font-size: 1.2em;
+                line-height: 1.8em;
+            }
+            ul {
+                padding: 0 3em;
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="/stylesheets/detail.css">
+
+<div class="col-12">
+    <div class="row">
+        <div class="col-12 col-md-6 col-left">
+            <h2 class="text-center">{{name}}</h2>
+            <h3 class="text-center">CAD ${{price}}</h3>
+            <p>
+                {{color}}
+            </p>
+            <p>
+                {{brief.content}}
+                <a href="{{brief.link}}">MORE</a>
+            </p>
+            <div class="row inputs">
+                <div class="col-6">
+                    <select name="size">
+                        <option value="m4_w6">Size: M4/W6</option>
+                        <option value="m5_w7">Size: M5/W7</option>
+                        <option value="m6_w8">Size: M6/W8</option>
+                        <option value="m7_w9">Size: M7/W9</option>
+                        <option value="m8_w10">Size: M8/W10</option>
+                        <option value="m9_w11">Size: M9/W11</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <select name="qty">
+                        <option value="1">Qty: 1</option>
+                        <option value="2">Qty: 2</option>
+                        <option value="3">Qty: 3</option>
+                        <option value="4">Qty: 4</option>
+                        <option value="5">Qty: 5</option>
+                        <option value="6">Qty: 6</option>
+                        <option value="7">Qty: 7</option>
+                        <option value="8">Qty: 8</option>
+                        <option value="9">Qty: 9</option>
+                        <option value="10">Qty: 10</option>
+                    </select>
+                </div>
+                <div class="col-12 text-center">
+                    <input type="submit" value="ADD TO CART">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-right">
+            <img src="{{image}}" alt="{{name}}" class="product-image">
+            <div class="notes text-center">
+                Color: {{color}} / Style: {{style}}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 paragraph">
+            <h2 class="text-center">{{name}}</h2>
+            <p>
+                {{descr}}
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 paragraph">
+            <h2 class="text-center">BENEFITS</h2>
+            <ul>
+                {{#each benefits}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 paragraph">
+            <h2 class="text-center">{{background.title}}</h2>
+            <p>
+                {{background.content}}
+            </p>
+        </div>
+    </div>
+</div>

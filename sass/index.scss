@@ -1,0 +1,111 @@
+@import '_vars';
+
+main {
+    .banner-wrap {
+        padding: 0;
+
+        .banner {
+            display: block;
+            width: 100%;
+        }
+
+        .embedded-btn {
+            position: absolute;
+            bottom: 20%;
+            left: 8.5%;
+
+            a {
+                font-size: .5em;
+                background-color: #000;
+                color: #FFF;
+                padding: 1em;
+                font-weight: 700;
+                border: .05em solid #000;
+                transition: color .5s, background-color .5s;
+
+                &:hover {
+                    background-color: #FFF;
+                    color: #000;
+                    transition: color .5s, background-color .5s;
+                }
+            }
+        }
+    }
+
+    .showcase {
+        margin-top: 1em;
+
+        .product {
+            display: block;
+            width: 100%;
+            transition: transform .5s;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: transform .5s;
+            }
+        }
+
+        .descr {
+            padding: 1em 0;
+
+            h3 {
+                font-size: 1.3em;
+                font-weight: bold;
+                margin-bottom: .5em;
+            }
+
+            p {
+                padding: .5em 0;
+                margin: 0;
+            }
+
+            a {
+                padding: .1em .5em;
+                border-bottom: .05em solid #000;
+                transition: color .5s, background-color .5s;
+
+                &:hover {
+                    color: #FFF;
+                    background-color: #000;
+                    transition: color .5s, background-color .5s;
+                }
+            }
+        }
+
+        .col-left, .col-right {
+            padding: 0
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .banner-wrap {   
+            .embedded-btn {
+                bottom: 23%;
+                left: 8.5%;
+    
+                a {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        .showcase {
+            margin-top: 3em;
+
+            .descr {
+                padding: 2em 0;
+            }
+
+            .col-left {
+                padding-right: 1.5em;
+            }
+
+            .col-right {
+                padding-left: 1.5em;
+            }
+        }
+    }
+}

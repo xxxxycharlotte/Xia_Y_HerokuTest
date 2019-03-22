@@ -1,19 +1,160 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/stylesheets/master.css">
-  </head>
-  <body>
-    <a href="/">Home</a>
-    <h1>Anything under me is being rendered dynamically from the route</h1>
+    {{{stylesheets}}}
+</head>
 
-    <!-- triple handlebars is a shorthand for a router-view -->
-    {{{body}}}
+<body>
+    <div class="container">
 
-    <h3>I  live under the router view</h3>
-    <a href="/user1">User 1</a>
-    <a href="/user2">User 2</a>
-  </body>
+        <header class="row">
+            <div class="col-12 col-lg-3">
+                <a href="/">
+                    <img src="/images/logo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <div class="col-12 col-lg-9">
+                <div class="row row-1st align-items-center">
+                    <div class="col-12 col-sm-7 text-center">
+                        Free Ground Shipping Over $75+
+                    </div>
+                    <div class="col-12 col-sm-5">
+                        <div class="search">
+                            <input type="text" placeholder="Search" class="search-inp">
+                            <img src="/images/search.svg" alt="Search Icon" class="search-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-2nd align-items-center">
+                    <div class="col-12 col-md-8">
+                        <div class="row justify-content-around menu">
+                            <div class="col-6 col-md-3 text-center">
+                                <a class="menu-item" href="#">Women</a>
+                            </div>
+                            <div class="col-6 col-md-3 text-center">
+                                <a class="menu-item" href="#">Men</a>
+                            </div>
+                            <div class="col-6 col-md-3 text-center">
+                                <a class="menu-item" href="#">Kids</a>
+                            </div>
+                            <div class="col-6 col-md-3 text-center">
+                                <a class="menu-item" href="#">Sale</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center login-signup">
+                        <a class="login-lnk" href="#">Log in</a>
+                        /
+                        <a class="signup-lnk" href="#">Sign up</a>
+                        <a class="shopping-cart-lnk" href="#"><img src="/images/shopping-cart.svg" alt="Shopping Cart"
+                                class="shopping-cart-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="row">
+          {{{body}}}
+        </main>
+
+        <footer class="row">
+            <div class="col-12">
+                <div class="row row-1st">
+                    <div class="col-12 text-center ask-sign-up">
+                        <h2>NEVER MISS A BEAT - SIGN UP!</h2>
+                    </div>
+                </div>
+                <div class="row row-2nd">
+                    <div class="col-12 text-center">
+                        <input type="email" name="email" placeholder="Email">
+                        <select name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="n/a">Do not specify</option>
+                        </select>
+                        <input type="submit" value="Join">
+                    </div>
+                </div>
+                <div class="row row-3rd justify-content-around">
+                    <div class="col-12 col-sm-6 col-md-3 text-center">
+                        <h3>LET'S CONNECT</h3>
+                        <div class="row justify-content-center social-icons">
+                            <a href="#">
+                                <img src="/images/twitter.svg" alt="Twitter" class="social-icon">
+                            </a>
+                            <a href="#">
+                                <img src="/images/facebook.svg" alt="Facebook" class="social-icon">
+                            </a>
+                            <a href="#">
+                                <img src="/images/instagram.svg" alt="Instagram" class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 text-center">
+                        <h3>ABOUT</h3>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="text-lnk" href="#">Contact Us</a>
+                            </div>
+                            <div class="col-12">
+                                <a class="text-lnk" href="#">Our Story</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 text-center">
+                        <h3>SHOPPING</h3>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="text-lnk" href="#">Orders</a>
+                                /
+                                <a class="text-lnk" href="#">Returns</a>
+                            </div>
+                            <div class="col-12">
+                                <a class="text-lnk" href="#">Shipping</a>
+                                /
+                                <a class="text-lnk" href="#">Delivery</a>
+                            </div>
+                            <div class="col-12">
+                                <a class="text-lnk" href="#">FAQ</a>
+                            </div>
+                            <div class="col-12">
+                                <a class="text-lnk" href="#">Gift Cards</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2 text-center">
+                        <h3>LEGAL</h3>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="text-lnk" href="#">Privacy and Terms</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 text-center">
+                        <h3>NIKE INC. SITES</h3>
+                        <div class="row">
+                            <div class="col-12">
+                                <a class="text-lnk" href="https://www.nike.com">Nike.com</a>
+                            </div>
+                            <div class="col-12">
+                                <a class="text-lnk" href="https://www.jordan.com">Jordan.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>

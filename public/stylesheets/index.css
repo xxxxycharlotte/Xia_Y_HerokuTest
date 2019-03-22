@@ -1,0 +1,65 @@
+main .banner-wrap {
+  padding: 0; }
+  main .banner-wrap .banner {
+    display: block;
+    width: 100%; }
+  main .banner-wrap .embedded-btn {
+    position: absolute;
+    bottom: 20%;
+    left: 8.5%; }
+    main .banner-wrap .embedded-btn a {
+      font-size: .5em;
+      background-color: #000;
+      color: #FFF;
+      padding: 1em;
+      font-weight: 700;
+      border: .05em solid #000;
+      transition: color .5s, background-color .5s; }
+      main .banner-wrap .embedded-btn a:hover {
+        background-color: #FFF;
+        color: #000;
+        transition: color .5s, background-color .5s; }
+
+main .showcase {
+  margin-top: 1em; }
+  main .showcase .product {
+    display: block;
+    width: 100%;
+    transition: transform .5s; }
+    main .showcase .product:hover {
+      transform: scale(1.05);
+      transition: transform .5s; }
+  main .showcase .descr {
+    padding: 1em 0; }
+    main .showcase .descr h3 {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: .5em; }
+    main .showcase .descr p {
+      padding: .5em 0;
+      margin: 0; }
+    main .showcase .descr a {
+      padding: .1em .5em;
+      border-bottom: .05em solid #000;
+      transition: color .5s, background-color .5s; }
+      main .showcase .descr a:hover {
+        color: #FFF;
+        background-color: #000;
+        transition: color .5s, background-color .5s; }
+  main .showcase .col-left, main .showcase .col-right {
+    padding: 0; }
+
+@media (min-width: 768px) {
+  main .banner-wrap .embedded-btn {
+    bottom: 23%;
+    left: 8.5%; }
+    main .banner-wrap .embedded-btn a {
+      font-size: 1em; }
+  main .showcase {
+    margin-top: 3em; }
+    main .showcase .descr {
+      padding: 2em 0; }
+    main .showcase .col-left {
+      padding-right: 1.5em; }
+    main .showcase .col-right {
+      padding-left: 1.5em; } }

@@ -1,0 +1,88 @@
+header {
+    background-color: $header-bg-color;
+    color: $header-color;
+    padding: .75em 0;
+
+    .logo {
+        display: block;
+        height: 6em;
+        margin: .5em auto;
+    }
+
+    .row.row-1st {
+        height: 5em;
+
+        .search {
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+
+            .search-inp {
+                font-size: 1.1em;
+                padding: 0 .5em;
+                width: 100%;
+                display: block;
+            }
+
+            .search-icon {
+                position: absolute;
+                display: block;
+                height: 80%;
+                right: 2.5%;
+                top: 10%;
+                bottom: 10%;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                    transition: transform .2s;
+                }
+            }
+        }
+    }
+
+    .row.row-2nd {
+        margin-top: .5em;
+
+        .menu {
+            a.menu-item {
+                font: {
+                    weight: bold;
+                    size: 1.1em;
+                }
+                display: inline-block;
+                width: 100%;
+                border: .05em solid transparent;
+                border-radius: .5em;
+                transition: border-color .3s;
+
+                &:hover {
+                    border-color: #FFF;
+                    transition: border-color .3s;
+                }
+            }
+        }
+
+        .login-signup {
+
+            a.login-lnk:hover,
+            a.signup-lnk:hover {
+                text-decoration: underline;
+            }
+
+            a.shopping-cart-lnk {
+                margin-left: 1em;
+
+                .shopping-cart-icon {
+                    height: 1.2em;
+                    transition: transform .5s;
+                }
+
+                &:hover .shopping-cart-icon {
+                    transform: rotateY(360deg);
+                    transition: transform .5s;
+                }
+            }
+        }
+    }
+}
